@@ -18,5 +18,5 @@
 
 ### Plot 4
 
-![Plot 4](plo41.png) 
+![Plot 4](plot4.png) 
 
