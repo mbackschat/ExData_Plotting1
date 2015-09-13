@@ -9,7 +9,7 @@ data<-read.table("household_power_consumption.txt", sep=";", header =T,
                  na.strings='?')
 
 # Extract data for 2 dates: Feb 01,2007 and Feb 02, 2007               
-subdata<-data[data$Date %in% c("1/2/2007","2/2/2007"),]  
+subdata<-subset(data, Date %in% c("1/2/2007","2/2/2007"))
 
 #Convert the data to date and time
 subdata$datetime<-strptime(paste(subdata$Date,subdata$Time),"%d/%m/%Y %H:%M:%S")
